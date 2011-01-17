@@ -4,6 +4,7 @@
 install_progs() {
 	apt-get update
 	apt-get install aptitude git-core htop ntpdate zip rar unrar bash-completion
+	my_cp "/root/.gitconfig"
 }
 
 upgrade_dist() {
@@ -23,4 +24,5 @@ my_cp(){
 echo cp ./files$1 $1
 }
 
-upgrade_dist
+#install_progs
+#upgrade_dist
