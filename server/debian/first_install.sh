@@ -9,9 +9,8 @@ install_progs() {
 
 upgrade_dist() {
 	my_cp "/etc/apt/apt.conf.d/99cache"
-	my_cp "/etc/apt/sources.list.d/"
+	my_cp_dir "/etc/apt/sources.list.d/"
 	my_cp "/etc/apt/preferences"
-exit;
 	apt-get update
 	apt-get -y upgrade
 	apt-get -y dist-upgrade
@@ -21,7 +20,11 @@ exit;
 }
 
 my_cp(){
-echo cp ./files$1 $1
+    cp ./files$1 $1
+}
+
+my_cp_dir(){
+    cp ./files$1* $1
 }
 
 #install_progs
