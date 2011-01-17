@@ -1,0 +1,26 @@
+#for php
+Package: libapache2-mod-php5 php5 php5-cgi php5-cli php5-common php5-curl php5-gd php5-mysql php5-pgsql php5-fpm php5-mcrypt php5-dev php-pear phpmyadmin nodejs
+Pin: release a=experimental
+Pin-Priority: 203
+
+Package: mc redmine redmine-sqlite rails nginx
+Pin: release a=unstable
+Pin-Priority: 203
+
+
+Package: *
+Pin: release a=stable
+Pin-Priority: 200
+
+Package: *
+Pin: release a=testing
+Pin-Priority: 201
+
+Package: *
+Pin: release a=unstable
+Pin-Priority: 199
+
+Package: *
+Pin: release a=experimental
+Pin-Priority: 198
+
