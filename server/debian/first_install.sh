@@ -37,11 +37,11 @@ upgrade_dist() {
 	my_cp "/etc/apt/apt.conf.d/99cache"
 	my_cp_dir "/etc/apt/sources.list.d/"
 	my_cp "/etc/apt/preferences"
-	apt-get update
-	apt-get -y upgrade
-	apt-get -y dist-upgrade
-	apt-get clean
-	apt-get autoclean
+	aptitude update
+	aptitude install apt dpkg aptitude
+	aptitude full-upgrade
+	aptitude clean
+	aptitude autoclean
 	apt-get autoremove
 }
 
