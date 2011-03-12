@@ -23,6 +23,9 @@ sudo apt-get install liboverlay-scrollbar-0.1-0
 
 
 
+sudo update-alternatives --set editor /usr/bin/mcedit
+
+
 
 
 

@@ -1,9 +1,15 @@
 #!/bin/sh
 #Config of locales and time zones
-#dpkg-reconfigure locales tzdata
+dpkg-reconfigure locales tzdata
+
+install_progs
+upgrade_dist
+
+
+update-alternatives --set editor /usr/bin/mcedit
 install_progs() {
 	apt-get update
-	apt-get install aptitude git-core htop ntpdate zip rar unrar bash-completion
+	apt-get install aptitude git-core htop ntpdate zip rar unrar bash-completion mc
 	my_cp "/root/.gitconfig"
 }
 
@@ -27,5 +33,3 @@ my_cp_dir(){
     cp ./files$1* $1
 }
 
-#install_progs
-#upgrade_dist
