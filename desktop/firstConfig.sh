@@ -12,7 +12,7 @@ chromium-browser chromium-codecs-ffmpeg-nonfree \
 nautilus-dropbox \
 qutim smplayer \
 virtualbox-guest-additions virtualbox-ose \
-mc git htop sshfs \
+mc git htop sshfs openssh-server\
 php5-cli php5-fpm php5-curl php5-mcrypt php5-memcache php5-mysql php5-xdebug phpunit \
 ubuntu-tweak
 
